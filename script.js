@@ -11,7 +11,7 @@ function stripArticles(bandName) {
 const sortedBands = bands.sort((a, b) => (stripArticles(a) > stripArticles(b)) ? 1 : -1);
 
 // Add the sorted list to the HTML
-const bandList = document.getElementById('band');
+const bandList = document.getElementById('bands');
 sortedBands.forEach(band => {
     const li = document.createElement('li');
     li.textContent = band;
